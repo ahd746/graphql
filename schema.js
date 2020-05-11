@@ -23,7 +23,7 @@ const PostType = new GraphQLObjectType({
       type: UserType,
       resolve(parent, args) {
         return axios
-          .get(`https://jsonplaceholder.typicode.com/users/${parent.userId}?_limit=10`)
+          .get(`https://jsonplaceholder.typicode.com/users/${parent.userId}`)
           .then(res => res.data);
       }
 
@@ -39,7 +39,7 @@ const RootQuery = new GraphQLObjectType({
       type: new GraphQLList(PostType),
       resolve(parent, args) {
         return axios
-          .get('https://jsonplaceholder.typicode.com/posts')
+          .get('https://jsonplaceholder.typicode.com/posts?_limit=10')
           .then(res => res.data);
       }
     }
