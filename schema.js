@@ -39,7 +39,7 @@ const RootQuery = new GraphQLObjectType({
       type: new GraphQLList(PostType),
       resolve(parent, args) {
         return axios
-          .get('https://jsonplaceholder.typicode.com/posts?_limit=10')
+          .get('https://jsonplaceholder.typicode.com/posts?_limit=50')
           .then(res => res.data);
       }
     }
