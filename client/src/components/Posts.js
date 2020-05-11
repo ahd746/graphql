@@ -23,7 +23,7 @@ export default function Posts() {
     <Query query={POSTS_QUERY}>
       {
         ({ data, loading, error }) => {
-          if (loading) return <h4>Loading...</h4>;
+          if (loading) return <h4 className="text-light">Loading...</h4>;
           if (error) console.log(error);
           return (
             <div className="my-5 text-light bd-secondary">

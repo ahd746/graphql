@@ -23,7 +23,7 @@ const PostType = new GraphQLObjectType({
       type: UserType,
       resolve(parent, args) {
         return axios
-          .get(`https://jsonplaceholder.typicode.com/users/${parent.userId}`)
+          .get(`https://jsonplaceholder.typicode.com/users/${parent.userId}?_limit=10`)
           .then(res => res.data);
       }
 
