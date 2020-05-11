@@ -10,7 +10,10 @@ const POSTS_QUERY = gql`
       id
       userId
       title
-      body
+      body,
+      user{
+        name
+      }
     }
   }
 `;
