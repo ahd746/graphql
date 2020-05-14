@@ -1,14 +1,13 @@
 {
-  "name": "dictionary-app",
+  "name": "blog-app",
   "version": "1.0.0",
-  "description": "Dictionary application",
+  "description": "Blog application",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "dictionary",
-    "english"
+    "blog"
   ],
   "author": "Ahmed Salama",
   "license": "ISC",
